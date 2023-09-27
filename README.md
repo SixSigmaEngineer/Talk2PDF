@@ -33,7 +33,7 @@ Set up the Talk2PDF Chat Application with these steps:
 
 ## EXAMPLE
 
-![Demo](/docs/Screenshot 1.png)
+![EXAMPLE](/docs/Screenshot1.png)
 
 ## Contributing
 This repository is designed for instructional use and is not open to additional contributions. It acts as supplementary content for a YouTube tutorial showcasing how to construct this project. You're welcome to adapt and improve the app to suit your needs.
