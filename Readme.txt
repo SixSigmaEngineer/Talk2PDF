@@ -1,7 +1,7 @@
-#Aberdeen Advisors MultiPDF Chat Application
+#Talk2PDF Chat Application
 
 #Introduction
-The Aberdeen Advisors MultiPDF Chat Application is a specialized tool built with Python that offers a unique interaction with your PDF documents. Using this app, you can naturally inquire about details or information found within the uploaded PDFs. Backed by a sophisticated language model, the application sifts through the content and supplies precise answers. However, keep in mind that it is designed to address queries specifically about the content within the uploaded documents.
+The Talk2PDF Chat Application is a specialized tool built with Python that offers a unique interaction with your PDF documents. Using this app, you can naturally inquire about details or information found within the uploaded PDFs. Backed by a sophisticated language model, the application sifts through the content and supplies precise answers. However, keep in mind that it is designed to address queries specifically about the content within the uploaded documents.
 
 #How It Works
 To achieve its functionality, the application employs a sequence of operations:
