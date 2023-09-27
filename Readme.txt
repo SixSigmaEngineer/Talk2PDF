@@ -1,42 +1,42 @@
-#Talk2PDF Chat Application
+# Talk2PDF Chat Application 💬🦜🔗
 
-#Introduction
-The Talk2PDF Chat Application is a specialized tool built with Python that offers a unique interaction with your PDF documents. Using this app, you can naturally inquire about details or information found within the uploaded PDFs. Backed by a sophisticated language model, the application sifts through the content and supplies precise answers. However, keep in mind that it is designed to address queries specifically about the content within the uploaded documents.
+## Introduction
+The Talk2PDF Chat Application is a specialized tool that allows users to interact seamlessly with their PDF documents. Built with Python, this tool enables users to pose questions about content within the uploaded PDFs, and in return, it fetches precise answers using the OpenAI API.
 
-#How It Works
-To achieve its functionality, the application employs a sequence of operations:
+**Note**: This application specifically addresses queries related to the content of the uploaded documents.
 
-PDF Loading: Multiple PDF documents are read, and the text contained within is extracted.
+## How It Works
+The application delivers its unique functionality through a series of steps:
 
-Text Chunking: This raw text is then segmented into manageable chunks, priming it for efficient processing.
+1. **PDF Loading**: Allows users to upload multiple PDF documents, from which the textual content is extracted.
+   
+2. **Text Chunking**: The extracted text is then broken down into manageable chunks, making it apt for efficient querying.
+   
+3. **Language Model Interaction**: Each of these chunks is transformed into vector representations (embeddings) using a language model.
+   
+4. **Similarity Assessment**: Upon receiving a user's question, the application compares it with these embeddings, identifying the chunks that are semantically closest to the query.
+   
+5. **Crafting a Response**: The identified relevant chunks are processed by the language model, which crafts a coherent response based on the content.
 
-Language Model Interaction: Vector representations (embeddings) of these chunks are generated using a language model.
+## Dependencies and Installation
 
-Similarity Assessment: When you pose a question, the app evaluates it against these chunks, pinpointing the segments with the closest semantic resemblance.
+### Installing
+Set up the Talk2PDF Chat Application with these steps:
 
-Crafting a Response: These relevant segments are relayed back to the language model, which then curates a response based on the content of the documents.
-Dependencies and Installation
+*Note - Ensure you Have Python and Git Installed on your Machine! 
+1. Clone the repository to your local machine (git clone).
+2. Install all the required dependencies using:
+   ```bash
+   pip install -r requirements.txt
+3. Obtain an API key from OpenAI. Then, populate the app.py file in the main project directory with this key.
+4. Use the batch file to run the program!
 
-#Installing 
-To get the Aberdeen Advisors MultiPDF Chat Application up and running, follow these steps:
+## EXAMPLE
 
-Clone the repository onto your computer.
-With the help of the following command, install the necessary dependencies:
+![Demo](/docs/Screenshot 1.png)
 
-pip install -r requirements.txt
+## Contributing
+This repository is designed for instructional use and is not open to additional contributions. It acts as supplementary content for a YouTube tutorial showcasing how to construct this project. You're welcome to adapt and improve the app to suit your needs.
 
-Secure an API key from OpenAI, and subsequently insert it into the .env file located within the main project directory.
-Confirm that you've taken care of the dependencies and integrated the OpenAI API key into the app.py script.
-
-#Usage
-Operating the MultiPDF Chat Application is straightforward:
-Using the Streamlit CLI, initiate the app.py script:
-
-streamlit run app.py
-
-The UI of the application will spring to life in your default web browser.
-
-Follow the on-screen directives to load your choice of PDF documents.
-
-Commence your natural language conversations with the app regarding the content of the loaded PDFs.
-
+## License
+The Talk2PDF App is released under the [MIT License](https://opensource.org/licenses/MIT).
